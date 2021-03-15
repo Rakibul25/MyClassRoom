@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/mainphoto"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/welcomelogoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_margin="25dp"
+        android:src="@drawable/welcomelogo"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/welcometextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Teachers/Students"
+        android:textColor="@color/white"
+        android:layout_below="@id/welcomelogoid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        ></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/welcomepage2ndlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcometextview"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        >
+
+
+
+        <Button
+            android:id="@+id/welcomebuttonteacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcometextview"
+            android:text="Teacher"
+            android:layout_marginTop="40dp"
+            android:onClick="gotologinpage"
+            android:layout_margin="10dp"
+            tools:ignore="OnClick"></Button>
+
+        <Button
+            android:id="@+id/welcomebuttonstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcometextview"
+            android:text="Student"
+            android:layout_marginTop="40dp"
+            android:onClick="gotologinpage"
+            android:layout_margin="10dp"
+            tools:ignore="OnClick"></Button>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
